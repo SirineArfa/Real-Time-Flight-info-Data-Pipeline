@@ -1,0 +1,6 @@
+pyspark
+elasticsearch
+kibana
+scala
+kafka
+numpy
