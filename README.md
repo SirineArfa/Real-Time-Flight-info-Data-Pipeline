@@ -7,8 +7,6 @@ corresponding configurations that will allow us to create this data pipeline. Th
 
 ![b](https://user-images.githubusercontent.com/80635318/209438806-ba08a62c-046c-4576-ad5b-322a34d57442.PNG)
 
-![c](https://user-images.githubusercontent.com/80635318/209438812-508ad5b4-0df6-492a-8f36-90bc5af0013c.PNG)
-
 
 ## Pipeline
 Our project pipeline is as follows:
@@ -60,6 +58,38 @@ Kibana is a visualization tool that can explore the data stored in elasticsearch
 6. Run PySpark consumer with spark-submit:
 
 `spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.1,,org.elasticsearch:elasticsearch-spark-30_2.12:7.14.2 /home/sirine/Downloads/spark_consumer.py`
+
+## How to launch kibana dashboard
+
+- Open http://localhost:5601/ in your browser.
+- Go to Management>Kibana>Saved Objects
+- Import Real-Time-Flight-Tracking-Project-Dashbord.ndjson
+- Open dashboard
+
+## Final result
+-  A Pie displaying Aircraft head direction(dir) vs Aircraft Registration Number(reg_nmber) & Real-Time Flight Tracking count number:
+![1](https://user-images.githubusercontent.com/80635318/209441421-a4139516-99f1-4ab1-97ec-a97440604207.PNG)
+
+- Vertical bar of Aircraft horizontal speed (km) vs 	Aircraft elevation (meters) & Vertical bar of Aircraft horizontal speed (km) vs 	Aircraft Geo-Latitude:
+![2](https://user-images.githubusercontent.com/80635318/209441588-6a249ae1-0f99-417c-a213-4f4972b8f394.PNG)
+
+- Horizontal bar showing the different Aircraft horizontal speed (km) & Heat map of Aircraft elevation (meters) vs Aircraft head direction :
+![3](https://user-images.githubusercontent.com/80635318/209441733-67d8be21-78c7-4f7a-af74-6cebca2af85e.PNG)
+
+- A Line that shows Aircraft horizontal speed (km) vs Aircraft Geo-Longitude:
+![4](https://user-images.githubusercontent.com/80635318/209441872-321a2cc6-2b63-4cba-97a2-4b11885a54ef.PNG)
+
+- A Map that geolocates in real time the different flights all over the world:
+
+![c](https://user-images.githubusercontent.com/80635318/209438812-508ad5b4-0df6-492a-8f36-90bc5af0013c.PNG)
+
+## Contribution
+
+[Sirine Arfa](https://github.com/SirineArfa)
+
+[Mohamed Aziz Tmar](https://github.com/tmarmedaziz)
+
+
 
 
 
